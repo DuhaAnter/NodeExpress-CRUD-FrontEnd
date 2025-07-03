@@ -1,0 +1,7 @@
+body{
+    font-family: "Segoe UI","Roboto","Helvetica Neue","Noto Sans","Liberation Sans",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+}
+#Sidebar{
+    min-height: 100vh;
+    border: 1px solid rgb(212, 208, 208);
+}
