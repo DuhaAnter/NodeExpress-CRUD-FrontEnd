@@ -16,14 +16,14 @@
 
 
   <!-- Sidebar -->
-  <div id="Sidebar" class="w-25 p-4 sidebar position-relative">
+  <div id="Sidebar" class="w-25 p-4 sidebar position-relative d-flex flex-column">
     <span class="position-absolute" style="right: 10px; top: 8px">
       <button class="btn  ">
-        <i class="fa-solid fa-xmark  border rounded-circle p-1" style="color: #B197FC;"></i>
+        <i class="fa-solid fa-xmark  border rounded-circle p-2 fs-5 scale-hover" style="color: #B197FC;"></i>
       </button>
     </span>
 
-    <a href="#" class="text-decoration-none text-white fs-4">
+    <a href="/" class="d-flex align-items-center text-decoration-none text-white fs-4 my-4">
       <i class="fa-brands fa-bluesky mx-2" style="color: #B197FC;"></i>
       <span class="mx-2 sidebar-text">Sidebar</span>
     </a>
@@ -31,29 +31,33 @@
     <hr>
 
     <ul class="nav nav-pills flex-column mb-auto">
-      <li>
+      <li class="nav-item">
         <a href="#" class="nav-link ">
           <i class="fa-solid fa-house mx-2" style="color: #B197FC;"></i>
           <span class="sidebar-text text-white">Home</span>
         </a>
       </li>
-      <li>
+      <li class="nav-item">
         <a href="#" class="nav-link ">
          <i class="fa-solid fa-user-plus mx-2" style="color: #B197FC;"></i>
           <span class="sidebar-text text-white">add customer</span>
-      </li>
+       </a>
+        </li>
     </ul>
+      
+    <hr>
 
     <div class="dropdown">
-  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
-    Dropdown button
-  </button>
+  <a class="text-decoration-none text-white dropdown-toggle" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+   <img src="/imgs/personal photo.jpg" alt="" width="40" height="32" class="rounded-circle me-2">
+    <strong class="sidebar-text">Admin one</strong>
+  </a>
   <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton2">
-    <li><a class="dropdown-item active" href="#">Action</a></li>
-    <li><a class="dropdown-item" href="#">Another action</a></li>
-    <li><a class="dropdown-item" href="#">Something else here</a></li>
+    <li><a class="dropdown-item " href="#">New Project</a></li>
+    <li><a class="dropdown-item" href="#">setting</a></li>
+    <li><a class="dropdown-item" href="#">Profile</a></li>
     <li><hr class="dropdown-divider"></li>
-    <li><a class="dropdown-item" href="#">Separated link</a></li>
+    <li><a class="dropdown-item" href="#">Sign out</a></li>
   </ul>
 </div>
   </div>
