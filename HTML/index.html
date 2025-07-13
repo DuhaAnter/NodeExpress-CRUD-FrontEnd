@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
     integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
 </head>
 
 <body class="bg-dark text-white">
@@ -104,20 +105,21 @@
       <td>@mdo</td>
       <td>Mark</td>
       <td>Mark</td>
-      <td>
-        <div class="btn-group" role="group" aria-label="Default button group">
-  <button type="button" class="btn btn-outline-secondary">
+     <td>
+        
+  <a data-bs-toggle="tooltip" data-bs-title="View Details"  href="/HTML/view.html"  class="btn btn-outline-secondary" >
      <i class="fa-solid fa-eye" style="color: #B197FC;"></i>
-  </button>
-  <button type="button" class="btn btn-outline-secondary">
+  </a>
+  <a href="/HTML/edit.html" class="btn btn-outline-secondary"
+  data-bs-toggle="tooltip" data-bs-title="Edit Details">
    
     <i class="fa-solid fa-pencil" style="color: #B197FC;"></i>
-  </button>
-  <button type="button" class="btn btn-outline-secondary">
+  </a>
+  <a type="button" class="btn btn-outline-secondary" data-bs-toggle="tooltip" data-bs-title="Delete Customer">
     <i class="fa-solid fa-trash" style="color: #B197FC;"></i>
 
-  </button>
-</div>
+  </a>
+
 </td>
 
 
@@ -130,19 +132,20 @@
       <td>Jacob</td>
       <td>Jacob</td>
       <td>
-        <div class="btn-group" role="group" aria-label="Default button group">
-  <button type="button" class="btn btn-outline-secondary">
+        
+  <a data-bs-toggle="tooltip" data-bs-title="View Details"  href="/HTML/view.html"  class="btn btn-outline-secondary" >
      <i class="fa-solid fa-eye" style="color: #B197FC;"></i>
-  </button>
-  <button type="button" class="btn btn-outline-secondary">
+  </a>
+  <a href="/HTML/edit.html" class="btn btn-outline-secondary"
+  data-bs-toggle="tooltip" data-bs-title="Edit Details">
    
     <i class="fa-solid fa-pencil" style="color: #B197FC;"></i>
-  </button>
-  <button type="button" class="btn btn-outline-secondary">
+  </a>
+  <a type="button" class="btn btn-outline-secondary" data-bs-toggle="tooltip" data-bs-title="Delete Customer">
     <i class="fa-solid fa-trash" style="color: #B197FC;"></i>
 
-  </button>
-</div>
+  </a>
+
 </td>
 
     </tr>
@@ -154,29 +157,38 @@
       <td>John</td>
       <td>John</td>
       <td>
-        <div class="btn-group" role="group" aria-label="Default button group">
-  <button type="button" class="btn btn-outline-secondary" >
+        
+  <a data-bs-toggle="tooltip" data-bs-title="View Details"  href="/HTML/view.html"  class="btn btn-outline-secondary" >
      <i class="fa-solid fa-eye" style="color: #B197FC;"></i>
-  </button>
-  <button type="button" class="btn btn-outline-secondary">
+  </a>
+  <a href="/HTML/edit.html" class="btn btn-outline-secondary"
+  data-bs-toggle="tooltip" data-bs-title="Edit Details">
    
     <i class="fa-solid fa-pencil" style="color: #B197FC;"></i>
-  </button>
-  <button type="button" class="btn btn-outline-secondary">
+  </a>
+  <a type="button" class="btn btn-outline-secondary" data-bs-toggle="tooltip" data-bs-title="Delete Customer">
     <i class="fa-solid fa-trash" style="color: #B197FC;"></i>
 
-  </button>
-</div>
+  </a>
+
 </td>
 
     </tr>
+    
   </tbody>
 </table>
    
 </section>
 </main>
-
+  
   <script src="/JS/bootstrap.bundle.min.js"></script>
+  <script>
+  // Initialize tooltips
+  const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]');
+  const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl));
+</script>
+  
+  
 </body>
 
 </html>
