@@ -1,11 +1,141 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>View Customer</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>View Customer</title>
+  <link rel="stylesheet" href="/CSS/bootstrap.min.css">
+  <link rel="stylesheet" href="/CSS/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
 </head>
-<body>
-    <h1>View Customer</h1>
+
+<body class="bg-dark text-white">
+
+<main class="d-flex ">
+  <!-- Sidebar -->
+  <div id="Sidebar" class="w-25 p-4 sidebar position-relative d-flex flex-column">
+    <span class="position-absolute" style="right: 10px; top: 8px">
+      <button class="btn  ">
+        <i class="fa-solid fa-xmark  border rounded-circle p-2 fs-5 scale-hover" style="color: #B197FC;"></i>
+      </button>
+    </span>
+
+    <a href="/" class="d-flex align-items-center text-decoration-none text-white fs-4 my-4">
+      <i class="fa-brands fa-bluesky mx-2" style="color: #B197FC;"></i>
+      <span class="mx-2 sidebar-text">Sidebar</span>
+    </a>
+
+    <hr>
+
+    <ul class="nav nav-pills flex-column mb-auto">
+      <li class="nav-item">
+        <a href="/HTML/index.html" class="nav-link ">
+          <i class="fa-solid fa-house mx-2" style="color: #B197FC;"></i>
+          <span class="sidebar-text text-white">Home</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a href="#" class="nav-link ">
+         <i class="fa-solid fa-user-plus mx-2" style="color: #B197FC;"></i>
+          <span class="sidebar-text text-white">add customer</span>
+       </a>
+        </li>
+    </ul>
+      
+    <hr>
+
+    <div class="dropdown">
+  <a class="text-decoration-none text-white dropdown-toggle" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+   <img src="/imgs/personal photo.jpg" alt="" width="40" height="32" class="rounded-circle me-2">
+    <strong class="sidebar-text">Admin one</strong>
+  </a>
+  <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton2">
+    <li><a class="dropdown-item " href="#">New Project</a></li>
+    <li><a class="dropdown-item" href="#">setting</a></li>
+    <li><a class="dropdown-item" href="#">Profile</a></li>
+    <li><hr class="dropdown-divider"></li>
+    <li><a class="dropdown-item" href="#">Sign out</a></li>
+  </ul>
+</div>
+  </div>
+<!-- divider -->
+ <div class="b-example-divider b-example-vr">
+
+ </div>
+
+
+  <!-- Main content -->
+<section class="w-100">
+    
+    <nav class="navbar " style="background-color: rgb(43,48,53);">
+  <div class="container-fluid justify-content-center justify-content-md-between py-2">
+      <a href="#" class="navbar-brand fw-bold fs-3 mb-1 mb-md-0 text-white">Dashboard</a>
+
+    <form class="d-flex" role="search">
+      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" style="background-color: #212529; border-color: #495057;"/>
+      <button class="btn btn-outline-success" type="submit">Search</button>
+    </form>
+  </div>
+    </nav>
+
+    
+
+<nav aria-label="breadcrumb" class="mt-4 px-2 fs-5 d-flex justify-content-between " style="width: 88%;">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="./index.html" style="color: #adb5bd;">Home</a></li>
+    <li class="breadcrumb-item active" aria-current="page">Mark</li>
+  </ol>
+  <p style="color: #adb5bd;">
+    <span class="fs-7 fw-bold ">Id : </span>
+    123545789865125465
+  </p>
+</nav>
+
+
+<table class="table table-dark table-bordered   ms-2 mt-5  " style="color: #adb5bd; width:88%;">
+  
+  <tbody>
+            <tr>
+              <th scope="row">Last Name</th>
+              <td> Mark</td>
+            </tr>
+            <tr>
+              <th scope="row">Last Name</th>
+              <td> Maaaaaaaaaaaaaaaaaaaaaaark</td>
+            </tr><tr>
+              <th scope="row">Last Name</th>
+              <td> Maaaaaaaaaaaaaaaaaaaaaaark</td>
+            </tr><tr>
+              <th scope="row">Last Name</th>
+              <td> Maaaaaaaaaaaaaaaaaaaaaaark</td>
+            </tr><tr>
+              <th scope="row">Last Name</th>
+              <td> Maaaaaaaaaaaaaaaaaaaaaaark</td>
+            </tr><tr>
+              <th scope="row">Last Name</th>
+              <td> Maaaaaaaaaaaaaaaaaaaaaaark</td>
+            </tr><tr>
+              <th scope="row">Last Name</th>
+              <td> Maaaaaaaaaaaaaaaaaaaaaaark</td>
+            </tr><tr>
+              <th scope="row">Last Name</th>
+              <td> Maaaaaaaaaaaaaaaaaaaaaaark</td>
+            </tr><tr>
+              <th scope="row">Last Name</th>
+              <td> Maaaaaaaaaaaaaaaaaaaaaaark</td>
+            </tr>
+    
+    
+  </tbody>
+</table>
+   
+</section>
+</main>
+  <script src="/JS/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>

@@ -1,4 +1,4 @@
-# Notes
+# My Notes For This Project
 
 ## Note 1
 
